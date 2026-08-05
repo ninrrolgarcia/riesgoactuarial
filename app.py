@@ -26,7 +26,8 @@ def cargar_base():
 modelo, metadata = cargar_modelo()
 df = cargar_base()
 
-mapa = {int(k): v for k, v in metadata['mapa_riesgo'].items()}
+mapa_dict = metadata.get('kmeans', {}).get('mapa_riesgo', {})
+mapa = {int(k): v for k, v in mapa_dict.items()}
 
 st.caption(metadata['nombre_modelo'])
 
