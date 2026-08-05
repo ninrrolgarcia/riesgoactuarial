@@ -29,7 +29,7 @@ df = cargar_base()
 mapa_dict = metadata.get('kmeans', {}).get('mapa_riesgo', {})
 mapa = {int(k): v for k, v in mapa_dict.items()}
 
-st.caption(metadata['nombre_modelo'])
+st.caption(metadata.get('proyecto', 'Modelo de Riesgo Actuarial'))
 
 with st.form('datos'):
 
