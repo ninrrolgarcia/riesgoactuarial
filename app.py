@@ -4,7 +4,7 @@ import streamlit as st
 from openai import OpenAI
 
 st.set_page_config(page_title='Riesgo actuarial', layout='centered')
-st.title('Predicción de riesgo actuarial-Ninrrol Garcia-Computacion en la nube - PTI-0620')
+st.title('Predicción de riesgo actuarial-Ninrrol Garcia-PTI-0620')
 
 @st.cache_resource
 def cargar_modelo():
